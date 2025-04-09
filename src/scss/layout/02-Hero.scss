@@ -249,13 +249,25 @@
     justify-content: center;
     border: 2px solid #251834;
     border-radius: 25px;
-    background-color: $_white;
+    background-color: transparent;
     width: 288px;
     height: 65px;
     font-weight: 400;
     font-size: 24px;
     color: #1e1e1e;
     transition: border 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    animation: changeColor 1200ms ease-in-out forwards;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: transparent;
+        ;
+    }
+
+    to {
+        background-color: $_white;
+    }
 }
 
 .hero-btn-link:active {
