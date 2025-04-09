@@ -255,9 +255,14 @@
     font-weight: 400;
     font-size: 24px;
     color: #1e1e1e;
-    transition: border 300ms ease-in-out;
+    transition: border 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
 
+.hero-btn-link:active {
+    box-shadow: 5px 5px 10px 0 #fff;
+}
+
+.hero-btn-link:focus,
 .hero-btn-link:hover {
     border: 7px solid #251834;
 }
