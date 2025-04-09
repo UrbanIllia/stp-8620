@@ -176,16 +176,18 @@
     font-size: 36px;
     line-height: 1;
     text-shadow:
-        -5px -5px 0 #000000,
-        5px -5px 0 #000000,
-        -5px 5px 0 #000000,
-        5px 5px 0 #000000,
-        -5px 0px 0 #000000,
-        5px 0px 0 #000000,
-        0px -5px 0 #000000,
-        0px 5px 0 #000000;
+        -6px -6px 0 #000000,
+        6px -6px 0 #000000,
+        -6px 6px 0 #000000,
+        6px 6px 0 #000000,
+        -6px 0px 0 #000000,
+        6px 0px 0 #000000,
+        0px -6px 0 #000000,
+        0px 6px 0 #000000,
+        0 10px 10px #fff;
     max-width: 212px;
     margin-bottom: 16px;
+    text-shadow: 0 10px 10px 0 #fff;
 
     span {
         color: $_yellow3;
