@@ -1,13 +1,10 @@
 .container.section {
-    position: relative;
     margin-top: 59px;
     margin-bottom: 93px;
 }
 
-// ..........................................
-
-// .................................................
-.diaries-maintitle {
+// ..........................................................................
+.maintitle {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -18,14 +15,14 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-maintitle {
+    .maintitle {
         font-size: 48px;
         margin-bottom: 40px;
     }
 }
 
-// ............................................................
-.diaries-secondtitle {
+// ............................................................................
+.secondtitle {
     font-family: "Lora", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -43,7 +40,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-secondtitle {
+    .secondtitle {
         font-size: 16px;
         width: 864px;
         margin-bottom: 32px;
@@ -54,39 +51,25 @@
     }
 }
 
-// ............................................................
+// .........................................................................
 
 .mySwiper {
     // width: 288px;
     width: 200px;
+    height: 120px;
     z-index: 10;
 }
 
 @media screen and (min-width: 1200px) {
     .mySwiper {
-        width: 400px;
+        width: 470px;
+        height: 260px;
 
     }
 }
 
-// .swiper-wrapper::before {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     width: 466px;
-//     height: 263px;
-//     background: rgba(44, 201, 67, 0.6);
-//     opacity: 0.4;
-//     filter: blur(50px);
-//     border-radius: 15px;
-//     top: -30px;
-//     left: -250px;
-//     z-index: 2;
-
-// }
-
-// ................................................................
-.diaries-list {
+// ...........................................................................
+.list {
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);
     display: flex;
@@ -95,7 +78,7 @@
     justify-content: center;
     gap: 32px 140px;
     margin-bottom: 32px;
-    padding-left: 96px;
+    // padding-left: 80px;
 }
 
 // .card-1 {
@@ -117,15 +100,15 @@
 //     justify-self: end;
 // }
 
-.diaries-item {
+.item {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
 }
 
-// ............................................................
-.diaries-item-title {
+// .....................................................................
+.item-title {
     font-family: "Lora", sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -136,14 +119,14 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-item-title {
+    .item-title {
         font-size: 16px;
 
     }
 }
 
-// .........................................................
-.diaries-item-text {
+// .......................................................................
+.item-text {
     font-family: "Lora", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -152,72 +135,103 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-item-text {
+    .item-text {
         font-size: 16px;
 
     }
 }
 
-// .............................................................
-.diaries-item-circle {
+// .........................................................................
+.item-circle {
     position: absolute;
-    left: -96px;
+    left: -70px;
     top: 50%;
     transform: translateY(-50%);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 122px;
-    height: 122px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    // .....................................................
-    // background-color: #9af995;
-    // outline: 10px solid #e6cbbb;
-    // filter: blur(10px);
+    border-radius: 50%;
 
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-item-circle {
-        left: -90px;
+    .item-circle {
+        left: -80px;
         top: 50%;
-        transform: translateY(-50%);
-        width: 160px;
-        height: 160px;
-        background-image: url(../../img/diaries/Ellipse\ 1.png);
+        width: 120px;
+        height: 120px;
     }
 }
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.item-circleReverse {
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 
-// ...............................................................
+}
 
-.diaries-item-content {
+@media screen and (min-width: 1200px) {
+    .item-circleReverse {
+        right: -80px;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+// ......................................................................
+.item-content {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     width: 216px;
     height: 143px;
-    padding: 0 24px 0 65px;
-    background: linear-gradient(270deg, #e6cbbb 15%, #4be243 100%);
+    padding: 0 24px 0 52px;
 
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-item-content {
+    .item-content {
         width: 265px;
         height: 176px;
         padding: 0 10px 0 89px;
-        // background-image: url(../../img/diaries/Rectangle\ 23.png);
-        // background-position: center;
-        // background-size: cover;
     }
 }
 
-// ......................................................................
-.diaries-text-action {
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.item-contentReverse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 216px;
+    height: 143px;
+    padding: 0 52px 0 24px;
+    text-align: right;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .item-contentReverse {
+        width: 265px;
+        height: 176px;
+        padding: 0 89px 0 10px;
+    }
+}
+
+// .........................................................................
+.text-action {
     font-family: "Lora", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -227,9 +241,20 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .diaries-text-action {
+    .text-action {
         font-size: 16px;
         margin-bottom: 32px;
         z-index: 3;
+    }
+}
+
+.img-swiper {
+    width: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+    .img-swiper {
+        width: 470px;
+        height: 262px;
     }
 }

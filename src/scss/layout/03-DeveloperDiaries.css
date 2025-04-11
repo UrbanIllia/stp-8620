@@ -1,13 +1,8 @@
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+.diaries-circle {
+  background-color: rgba(75, 226, 67, 0.8);
+  box-shadow: 0 0 8px 12px rgba(75, 226, 67, 0.8), 0 0 5px 24px rgba(255, 255, 255, 0.7333333333), 0 0 16px 43px #E6Cbbc;
 }
 
-.swiper {
-  width: 470px;
+.diaries-content {
+  background: linear-gradient(270deg, #e6cbbb 15%, #4be243 100%);
 }/*# sourceMappingURL=03-DeveloperDiaries.css.map */

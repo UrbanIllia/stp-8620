@@ -1,0 +1,23 @@
+// .swiper-wrapper::before {
+//     content: '';
+//     position: absolute;
+//     display: block;
+//     width: 466px;
+//     height: 263px;
+//     background: rgba(44, 201, 67, 0.6);
+//     opacity: 0.4;
+//     filter: blur(50px);
+//     border-radius: 15px;
+//     top: -30px;
+//     left: -250px;
+//     z-index: 2;
+
+// }
+.diaries-circle {
+    background-color: rgba(75, 226, 67, 0.8);
+    box-shadow: 0 0 8px 12px rgba(75, 226, 67, 0.8), 0 0 5px 24px #ffffffbb, 0 0 16px 43px #E6Cbbc;
+}
+
+.diaries-content {
+    background: linear-gradient(270deg, #e6cbbb 15%, #4be243 100%);
+}
