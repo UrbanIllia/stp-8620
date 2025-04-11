@@ -56,7 +56,6 @@ video {
   list-style: none;
 }
 
-
 .container {
   max-width: 320px;
   width: 100%;
@@ -72,10 +71,9 @@ video {
 }
 
 body {
-  font-family: "Lilita One", "Lora", sans-serif;
+  font-family: 'Lilita One', 'Lora', sans-serif;
   background-color: $_beige;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -88,4 +86,8 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+main {
+  padding-top: 300px;
 }
