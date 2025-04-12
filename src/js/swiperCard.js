@@ -1,13 +1,3 @@
-// const swiper = new Swiper('.swiper', {
-//   effect: 'cards',
-//   cardsEffect: {
-//     perSlideRotate: 0,
-//     perSlideOffset: 20,
-//     slideShadows: false,
-//     rotate: false,
-//   },
-//   grabCursor: true,
-// });
 const swiper = new Swiper('.mySwiper', {
   effect: 'cards',
   cardsEffect: {
