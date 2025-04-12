@@ -1,0 +1,8 @@
+.developers-circle {
+  background-color: rgba(255, 187, 33, 0.8);
+  box-shadow: 0 0 8px 12px rgba(255, 187, 33, 0.8), 0 0 5px 24px rgba(255, 255, 255, 0.7333333333), 0 0 16px 43px #E6Cbbc;
+}
+
+.developers-content {
+  background: linear-gradient(90deg, #e6cbbb 15%, #FFBB21 100%);
+}/*# sourceMappingURL=04-DevelopersFavoriteGames.css.map */

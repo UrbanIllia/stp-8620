@@ -1,6 +1,7 @@
 // CSS Frameworks
 @import 'modern-normalize/modern-normalize.css';
 // layout
+@import './layout/00-same-sections.scss';
 @import './layout/01-header.scss';
 @import './layout/02-Hero.scss';
 @import './layout/03-DeveloperDiaries.scss';
