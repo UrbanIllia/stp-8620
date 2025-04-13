@@ -1,6 +1,6 @@
 .day-circle {
-  background-color: rgba(251, 178, 66, 0.8);
-  box-shadow: 0 0 8px 12px rgba(251, 178, 66, 0.8), 0 0 5px 24px rgba(255, 255, 255, 0.7333333333), 0 0 16px 43px #E6Cbbc;
+  background-color: rgb(251, 178, 66);
+  box-shadow: 0 0 8px 12px rgb(251, 178, 66), 0 0 5px 24px rgba(255, 255, 255, 0.7333333333), 0 0 16px 43px #E6Cbbc;
 }
 
 .day-content {
