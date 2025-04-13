@@ -7,15 +7,14 @@
   width: 320px;
   height: 100%;
   display: flex;
-  background: url("../../img/footer/footer-groop-mini.png") top/cover no-repeat;
+  background: url(/img/footer/footer-groop-mini.png) top/cover no-repeat;
   z-index: 0;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
   .footerok .container::before {
     width: 1200px;
-    background: url("../../img/footer/footer.png") top/cover no-repeat;
+    background: url("/img/footer/footer.png") top/cover no-repeat;
   }
 }
 .footerok {

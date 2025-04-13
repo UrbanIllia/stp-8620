@@ -11,6 +11,7 @@ $_green: #5ae253;
 $_black: #1f152d;
 $_white: #ffffff;
 
+
 .footerok .container::before {
   content: '';
   position: absolute;
@@ -20,18 +21,17 @@ $_white: #ffffff;
   width: 320px;
   height: 100%;
   display: flex;
-  background: url('../../img/footer/footer-groop-mini.png')top / cover no-repeat;
+  background: url(/img/footer/footer-groop-mini.png)top / cover no-repeat;
   // transform: rotate(180deg);
   // background-position: 95% 100%;
   // background-size: 140% 100%;
   z-index: 0;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
   .footerok .container::before {
     width: 1200px;
-    background: url('../../img/footer/footer.png') top / cover no-repeat;
+    background: url('/img/footer/footer.png') top / cover no-repeat;
   }
 }
 
