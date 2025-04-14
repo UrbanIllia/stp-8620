@@ -2,6 +2,18 @@
   scroll-behavior: smotch;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+html,
+body {
+  width: 100%;
+  min-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 h1,
 h2,
 h3,
@@ -75,7 +87,7 @@ video {
 }
 
 body {
-  font-family: "Lilita One", "Lora", sans-serif;
+  font-family: 'Lilita One', 'Lora', sans-serif;
   background-color: $_beige;
 }
 

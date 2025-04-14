@@ -1,0 +1,92 @@
+$_blue: #1fa3cd;
+$_beige: #fae6d9;
+$_yellow: #ffbb21;
+$_yellow2: #fbb242;
+$_yellow3: #f6cc12;
+$_violet: #fd74de;
+$_pink: #fe8d8f;
+$_pink2: #fb8d81;
+$_pink3: #ee615b;
+$_green: #5ae253;
+$_black: #1f152d;
+$_white: #ffffff;
+
+.cookies-modal::after {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: linear-gradient(0deg, #000, transparent);
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+.cookies-modal::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //   display: flex;
+  background: url('/img/cookmodal/modal.png') top / cover no-repeat;
+  background-position: 95% 100%;
+  background-size: 140% 100%;
+  z-index: -1;
+  opacity: 1;
+  z-index: 100;
+}
+
+.cookies-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10000;
+  // box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  // border-top-left-radius: 20px;
+  // border-top-right-radius: 20px;
+
+  .container {
+    padding: 60px 20px 40px;
+    z-index: 1000;
+    position: relative;
+  }
+
+  .modal-title {
+    color: $_white;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .modal-text {
+    font-weight: 500px;
+    color: $_white;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .modal-button {
+      background-color: $_white;
+      color: $_black;
+      padding: 12px 24px;
+      border: 2px solid $_black;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $_beige;
+      }
+    }
+  }
+}
