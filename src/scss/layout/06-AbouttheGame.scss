@@ -1,3 +1,19 @@
+.about .mySwiper::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 466px;
+    height: 263px;
+    background: rgba(234, 73, 73, 0.6);
+    opacity: 0.4;
+    filter: blur(50px);
+    border-radius: 15px;
+    top: -50px;
+    left: 200px;
+    z-index: -1;
+
+}
+
 .about-circle {
     background-color: rgb(254, 141, 143);
     box-shadow: 0 0 8px 12px rgb(254, 141, 143), 0 0 5px 24px #ffffffbb, 0 0 16px 43px #fae6d9;
