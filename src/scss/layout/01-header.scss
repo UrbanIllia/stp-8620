@@ -14,8 +14,8 @@
   height: 100%;
   display: flex;
   background: url('/img/header/blue.png') top / cover no-repeat;
-  background-position: 95% 100%;
-  background-size: 140% 100%;
+  // background-position: 95% 100%;
+  background-size: 100% 70%;
   z-index: 0;
 }
 
@@ -61,23 +61,19 @@
     flex-direction: column;
     text-align: center;
 
-    img {
-      width: 50px;
-      height: 50px;
-    }
   }
 
   .header-logo-text {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $_yellow;
-    margin-top: 10px;
-    font-size: 20px;
-    max-width: 510px;
-    text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-      2px 2px 0 #000000, -2px 0px 0 #000000, 2px 0px 0 #000000,
-      0px -2px 0 #000000, 0px 2px 0 #000000;
-    margin-bottom: 0px;
+    // font-weight: 700;
+    // text-transform: uppercase;
+    // color: $_yellow;
+    // margin-top: 10px;
+    // font-size: 20px;
+    // max-width: 510px;
+    // text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    //   2px 2px 0 #000000, -2px 0px 0 #000000, 2px 0px 0 #000000,
+    //   0px -2px 0 #000000, 0px 2px 0 #000000;
+    // margin-bottom: 0px;
 
     p:nth-child(1)::before {
       content: '';
@@ -295,5 +291,43 @@
         color: $_black;
       }
     }
+  }
+}
+
+.header-logo-text {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ee615b;
+  text-shadow:
+    rgb(41, 25, 55) 1px 0px 0px,
+    rgb(41, 25, 55) 0.540302px 0.841471px 0px,
+    rgb(41, 25, 55) -0.416147px 0.909297px 0px,
+    rgb(41, 25, 55) -0.989992px 0.14112px 0px,
+    rgb(41, 25, 55) -0.653644px -0.756802px 0px,
+    rgb(41, 25, 55) 0.283662px -0.958924px 0px,
+    rgb(41, 25, 55) 0.96017px -0.279415px 0px,
+    0 4px 4px rgba(255, 255, 255, 0.5);
+  width: 70px;
+  margin-top: 8px;
+
+  span {
+    color: #f3bb1e;
+  }
+}
+
+.header-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+  .header-logo-img {
+    width: 67px;
+    height: 67px;
   }
 }
