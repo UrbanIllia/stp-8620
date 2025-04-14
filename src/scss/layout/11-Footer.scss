@@ -11,28 +11,14 @@ $_green: #5ae253;
 $_black: #1f152d;
 $_white: #ffffff;
 
-
-.footerok .container::before {
+.footerok::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 320px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  display: flex;
-  background: url(/img/footer/footer-groop-mini.png)top / cover no-repeat;
-  // transform: rotate(180deg);
-  // background-position: 95% 100%;
-  // background-size: 140% 100%;
-  z-index: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .footerok .container::before {
-    width: 1200px;
-    background: url('/img/footer/footer.png') top / cover no-repeat;
-  }
+  background: url('/img/footer/footer.png') top / cover no-repeat;
 }
 
 .footerok {
@@ -59,7 +45,6 @@ $_white: #ffffff;
       align-items: center;
 
       li {
-
         a,
         p {
           font-family: 'Lora';
@@ -79,37 +64,46 @@ $_white: #ffffff;
       }
     }
   }
+}
 
-  @media screen and (min-width: 320px) {
-    .footer-nav-list {
-      flex-direction: column;
-      gap: 8px;
-    }
+@media screen and (min-width: 0px) {
+  .footerok .footer-nav {
+    padding-top: 40px;
   }
+}
+@media screen and (min-width: 1200px) {
+  .footerok .footer-nav {
+    padding: 40px 0 10px 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .footer-nav-list {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
 
-  @media screen and (min-width: 1200px) {
-    .footer-nav-list {
-      flex-direction: column;
-      flex-direction: row;
-      gap: 16px;
-      display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-nav-list {
+    flex-direction: column;
+    flex-direction: row;
+    gap: 16px;
+    display: flex;
 
-      li {
-
-        a,
-        p {
-          font-size: 20px;
-        }
+    li {
+      a,
+      p {
+        font-size: 20px;
       }
+    }
 
-      .footer-span {
-        height: 16px;
-        display: inline-block;
-        width: 1px;
-        height: 16px;
-        background-color: $_white;
-        margin: 0 8px;
-      }
+    .footer-span {
+      height: 16px;
+      display: inline-block;
+      width: 1px;
+      height: 16px;
+      background-color: $_white;
+      margin: 0 8px;
     }
   }
 }
