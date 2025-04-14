@@ -29,12 +29,22 @@ $_white: #ffffff;
   background: url('/img/header/blue.png') top / cover no-repeat;
   background-position: 95% 100%;
   background-size: 140% 100%;
-  z-index: 0;
+  z-index: -1;
+  opacity: 1;
 }
-
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; // підбери висоту точно
+  background-color: $_blue;
+  z-index: 1;
+}
 .header {
   position: fixed;
-  //   background-color: $_blue;
+  // background-color: $_blue;
   color: $_white;
   width: 100%;
   display: flex;
@@ -74,8 +84,8 @@ $_white: #ffffff;
     text-align: center;
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 67px;
+      height: 67px;
     }
   }
 
@@ -198,6 +208,7 @@ $_white: #ffffff;
     .header-logo-text,
     .header-nav {
       display: none;
+      // margin-left: 190px;
     }
 
     .header-menu-toggle {
