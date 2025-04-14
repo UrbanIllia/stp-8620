@@ -11,23 +11,32 @@ $_green: #5ae253;
 $_black: #1f152d;
 $_white: #ffffff;
 
-.footerok::before {
+
+.footerok .container::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
   height: 100%;
   display: flex;
-  background: url('/img/header/blue.png') top / cover no-repeat;
-  transform: rotate(180deg);
-  background-position: 95% 100%;
-  background-size: 140% 100%;
+  background: url(/img/footer/footer-groop-mini.png)top / cover no-repeat;
+  // transform: rotate(180deg);
+  // background-position: 95% 100%;
+  // background-size: 140% 100%;
   z-index: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footerok .container::before {
+    width: 1200px;
+    background: url('/img/footer/footer.png') top / cover no-repeat;
+  }
+}
+
 .footerok {
-  padding: 40px 20px;
+  padding: 36px 0 16px 0;
   text-align: center;
   background-position: 95% 100%;
   background-size: 140% 100%;
@@ -37,7 +46,6 @@ $_white: #ffffff;
   .footer-nav {
     position: relative;
     z-index: 1;
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -51,6 +59,7 @@ $_white: #ffffff;
       align-items: center;
 
       li {
+
         a,
         p {
           font-family: 'Lora';
@@ -86,9 +95,10 @@ $_white: #ffffff;
       display: flex;
 
       li {
+
         a,
         p {
-          font-size: 16px;
+          font-size: 20px;
         }
       }
 
@@ -101,5 +111,11 @@ $_white: #ffffff;
         margin: 0 8px;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footerok {
+    padding: 80px 0 32px 0;
   }
 }
