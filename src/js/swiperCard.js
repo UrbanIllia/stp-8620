@@ -31,17 +31,17 @@ function initSwiper1() {
             slidesPerView: 'auto',
             spaceBetween: 0,
             cardsEffect: {
-              perSlideOffset: 16,
+              perSlideOffset: 12,
             },
           },
-          // 1201: {
-          //   direction: 'horizontal',
-          //   slidesPerView: 1,
-          //   spaceBetween: 0,
-          //   cardsEffect: {
-          //     perSlideOffset: 20,
-          //   },
-          // },
+          1201: {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 0,
+            cardsEffect: {
+              perSlideOffset: 12,
+            },
+          },
         },
       });
       console.log('Swiper1 инициализирован');

@@ -56,7 +56,6 @@
 .mySwiper {
     width: 288px;
     height: 162px;
-    z-index: 10;
     margin: 0 auto;
 }
 
@@ -69,18 +68,27 @@
 }
 
 // ...........................................................................
-.mySwiper2 .swiper-slide {
+.mySwiper2 .swiper-wrapper {
     margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1200px) {
-    .mySwiper2 .swiper-slide {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .mySwiper2 .swiper-wrapper {
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        // gap: 32px 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
         gap: 32px 40px;
+        justify-content: center;
     }
+
+}
+
+.swiper-slide {
+    max-width: 380px;
 }
 
 // ...........................................................................
@@ -105,6 +113,7 @@
 // .......................................................
 .item {
     position: relative;
+
 }
 
 // .....................................................................
@@ -245,7 +254,6 @@
     .text-action {
         font-size: 16px;
         margin-bottom: 32px;
-        // z-index: 3;
     }
 }
 
