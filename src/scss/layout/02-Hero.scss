@@ -8,6 +8,15 @@
 //         padding-top: 169px;
 //     }
 // }
+.hero {
+    margin-top: -40px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        margin-top: -70px;
+    }
+}
 
 // ......................................................
 .hero-wrapper {
