@@ -1,4 +1,3 @@
-// Swiper для .mySwiper (изображения)
 let swiper1 = null;
 
 function initSwiper1() {
