@@ -2,16 +2,25 @@
     content: '';
     position: absolute;
     display: block;
-    width: 466px;
-    height: 263px;
+    width: 288px;
+    height: 162px;
     background: rgba(44, 201, 67, 0.6);
     opacity: 0.4;
     filter: blur(50px);
     border-radius: 15px;
     top: -50px;
-    left: -200px;
+    left: 0;
     z-index: -1;
 
+}
+
+@media screen and (min-width: 1200px) {
+    .diaries .mySwiper::before {
+        width: 466px;
+        height: 263px;
+        top: -60px;
+        left: -200px;
+    }
 }
 
 .diaries-circle {
@@ -21,4 +30,5 @@
 
 .diaries-content {
     background: linear-gradient(270deg, #fae6d9 15%, #4be243 100%);
+
 }

@@ -29,6 +29,7 @@
   background-color: $_blue;
   z-index: 1;
 }
+
 .header {
   position: fixed;
 
@@ -61,28 +62,7 @@
     position: relative;
   }
 
-  .header-logo {
-    z-index: 1;
-    position: relative;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
   .header-logo-text {
-    // font-weight: 700;
-    // text-transform: uppercase;
-    // color: $_yellow;
-    // margin-top: 10px;
-    // font-size: 20px;
-    // max-width: 510px;
-    // text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
-    //   2px 2px 0 #000000, -2px 0px 0 #000000, 2px 0px 0 #000000,
-    //   0px -2px 0 #000000, 0px 2px 0 #000000;
-    // margin-bottom: 0px;
-
     p:nth-child(1)::before {
       content: '';
       width: 73px;
@@ -148,8 +128,8 @@
         color: $_white;
         text-decoration: none;
         font-weight: 600;
-        // font-size: 1em;
         font-size: 20px;
+
         transition: all 0.3s ease-in-out;
 
         &:hover {
@@ -171,6 +151,7 @@
   .header-menu-toggle:active span {
     box-shadow: 0 4px 6px $_white;
   }
+
   .header-menu-toggle {
     display: flex;
     background: none;
@@ -289,28 +270,30 @@
       transform: rotate(315deg);
     }
   }
+}
 
-  .header-mobile-nav-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    margin-top: 40px;
-    font-size: 1.3em;
-    font-family: 'Times New Roman', Times, serif;
-    transition: all 0.3s ease-in-out;
+.header-mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 94px;
+  // font-size: 1.3em;
+  transition: all 0.3s ease-in-out;
 
-    li a {
-      color: $_white;
-      font-weight: 600;
-      text-decoration: none;
+  li a {
+    color: $_white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    font-family: 'Lora', sans-serif;
 
-      &:hover {
-        color: $_black;
-      }
-      &:active {
-        text-shadow: 0 4px 6px $_white;
-      }
+    &:hover {
+      color: $_black;
+    }
+    &:active {
+      text-shadow: 0 4px 6px $_white;
     }
   }
 }
