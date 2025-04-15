@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  // gap: 109px;
 }
 
 .header::before {
@@ -140,16 +141,21 @@
       position: relative;
       z-index: 1;
       list-style: none;
+      align-items: center;
 
       li a {
         font-family: 'Lora';
         color: $_white;
         text-decoration: none;
         font-weight: 600;
-        font-size: 1em;
+        // font-size: 1em;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
           color: $_black;
+        }
+        &:active {
           text-shadow: 0 4px 6px $_white;
         }
       }
@@ -162,7 +168,7 @@
     }
   }
 
-  .header-menu-toggle:hover span {
+  .header-menu-toggle:active span {
     box-shadow: 0 4px 6px $_white;
   }
   .header-menu-toggle {
@@ -292,6 +298,7 @@
     margin-top: 40px;
     font-size: 1.3em;
     font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease-in-out;
 
     li a {
       color: $_white;
@@ -300,6 +307,8 @@
 
       &:hover {
         color: $_black;
+      }
+      &:active {
         text-shadow: 0 4px 6px $_white;
       }
     }
@@ -314,14 +323,15 @@
   text-transform: uppercase;
   text-align: center;
   color: #ee615b;
+  filter: drop-shadow(0 4px 3px rgba(255, 255, 255, 1));
   text-shadow: rgb(41, 25, 55) 1px 0px 0px,
     rgb(41, 25, 55) 0.540302px 0.841471px 0px,
     rgb(41, 25, 55) -0.416147px 0.909297px 0px,
     rgb(41, 25, 55) -0.989992px 0.14112px 0px,
     rgb(41, 25, 55) -0.653644px -0.756802px 0px,
     rgb(41, 25, 55) 0.283662px -0.958924px 0px,
-    rgb(41, 25, 55) 0.96017px -0.279415px 0px,
-    0 4px 4px rgba(255, 255, 255, 0.5);
+    rgb(41, 25, 55) 0.96017px -0.279415px 0px;
+
   width: 70px;
   margin-top: 8px;
 
