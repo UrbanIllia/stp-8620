@@ -21,6 +21,7 @@ $_white: #ffffff;
   height: 400px;
   z-index: 1;
 }
+
 .cookies-modal::before {
   content: '';
   position: absolute;
@@ -30,8 +31,7 @@ $_white: #ffffff;
   height: 100%;
   //   display: flex;
   background: url('/img/cookmodal/modal.png') top / cover no-repeat;
-  background-position: 95% 100%;
-  background-size: 140% 100%;
+
   z-index: -1;
   opacity: 1;
   z-index: 100;
@@ -44,9 +44,6 @@ $_white: #ffffff;
   width: 100%;
   text-align: center;
   z-index: 10000;
-  // box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
-  // border-top-left-radius: 20px;
-  // border-top-right-radius: 20px;
 
   .container {
     padding: 60px 20px 40px;

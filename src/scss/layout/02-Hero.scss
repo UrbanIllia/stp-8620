@@ -1,5 +1,12 @@
 .hero {
-    padding-top: 169px;
+    padding-top: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+
+        padding-top: 169px;
+    }
 }
 
 // ......................................................
