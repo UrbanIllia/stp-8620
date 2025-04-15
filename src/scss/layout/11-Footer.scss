@@ -54,8 +54,9 @@ $_white: #ffffff;
           width: 100%;
           text-align: center;
           font-size: 14px;
-          white-space: normal;
-          word-break: break-word;
+          font-weight: 600px;
+          // white-space: normal;
+          // word-break: break-word;
         }
 
         a:hover {
@@ -94,6 +95,7 @@ $_white: #ffffff;
       a,
       p {
         font-size: 20px;
+        line-height: 20px;
       }
     }
 
