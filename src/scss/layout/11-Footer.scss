@@ -1,96 +1,60 @@
-$_blue: #1fa3cd;
-$_beige: #fae6d9;
-$_yellow: #ffbb21;
-$_yellow2: #fbb242;
-$_yellow3: #f6cc12;
-$_violet: #fd74de;
-$_pink: #fe8d8f;
-$_pink2: #fb8d81;
-$_pink3: #ee615b;
-$_green: #5ae253;
-$_black: #1f152d;
-$_white: #ffffff;
-
-.footerok::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('/img/footer/footer.png') top / cover no-repeat;
+.footerok .container {
+  padding: 38px 0 16px 0;
+  text-align: center;
+  background: url('/img/footer/footer-groop-mini.png') top / cover no-repeat;
 }
 
-.footerok {
-  padding: 36px 0 16px 0;
-  text-align: center;
-  background-position: 95% 100%;
-  background-size: 140% 100%;
-  z-index: 0;
+@media screen and (min-width: 1200px) {
+  .footerok .container {
+    padding: 80px 0 32px 0;
+    background: url('/img/footer/footer.png') top / cover no-repeat;
+  }
+}
+
+.footer-nav {
   position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
-  .footer-nav {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .footer-nav-list {
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    .footer-nav-list {
-      gap: 8px;
-      list-style: none;
-      margin: 0;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+    li {
 
-      li {
-        a,
-        p {
-          font-family: 'Lora';
-          color: $_white;
-          text-decoration: none;
-          margin: 0;
-          width: 100%;
-          text-align: center;
-          font-size: 14px;
-          white-space: normal;
-          word-break: break-word;
-        }
+      a,
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: "Lora", sans-serif;
+        color: $_white;
+        text-decoration: none;
+      }
 
-        a:hover {
-          text-decoration: underline;
-        }
+      a:hover {
+        text-decoration: underline;
       }
     }
   }
 }
 
-@media screen and (min-width: 0px) {
-  .footerok .footer-nav {
-    padding-top: 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footerok .footer-nav {
-    padding: 40px 0 10px 0;
-  }
-}
-@media screen and (min-width: 320px) {
-  .footer-nav-list {
-    flex-direction: column;
-    gap: 8px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .footer-nav-list {
-    flex-direction: column;
     flex-direction: row;
     gap: 16px;
     display: flex;
 
     li {
+
       a,
       p {
         font-size: 20px;
@@ -105,11 +69,5 @@ $_white: #ffffff;
       background-color: $_white;
       margin: 0 8px;
     }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footerok {
-    padding: 80px 0 32px 0;
   }
 }
