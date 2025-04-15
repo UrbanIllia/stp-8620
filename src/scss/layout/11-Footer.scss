@@ -52,12 +52,14 @@
     flex-direction: row;
     gap: 16px;
     display: flex;
+    font-size: 20px;
 
     li {
 
       a,
       p {
         font-size: 20px;
+        line-height: 20px;
       }
     }
 
@@ -69,5 +71,19 @@
       background-color: $_white;
       margin: 0 8px;
     }
+  }
+}
+
+.footerok-text {
+  font-size: 14px !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .footerok-text {
+    font-size: 20px !important;
+  }
+
+  .footerok-link {
+    font-size: 20px !important;
   }
 }
