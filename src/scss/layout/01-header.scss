@@ -351,9 +351,17 @@
   border-radius: 10px;
 }
 
+.header-logo {
+  margin-top: 0;
+}
+
 @media (min-width: 1200px) {
   .header-logo-img {
     width: 67px;
     height: 67px;
+  }
+
+  .header-logo {
+    margin-top: 16px;
   }
 }
